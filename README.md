@@ -1,6 +1,6 @@
-En este proyecto, estaremos presentando la elaboracion de un cifrado de palabras del challenge de ```ALURA```.
+En este proyecto, estaremos presentando la elaboración de un cifrado de palabras del challenge de ```ALURA```.
 
-La Herramientas a utilizar son:
+Las herramientas a utilizar son:
 
 -HTML
 
@@ -14,4 +14,4 @@ La Herramientas a utilizar son:
 
 -Figma
 
--Espero os disfruteis este proyecto, y futuros proyecto que tengo.
+- Espero que disfrutéis este proyecto y los futuros proyectos que tengo por delante, gracias por su apoyo.
