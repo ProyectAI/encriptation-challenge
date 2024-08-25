@@ -1,339 +1,120 @@
-.page-icon,
-.page-icon1 {
-  height: 40px;
-  width: 40px;
-  position: relative;
-}
-.list,
-.menu {
-  border-radius: var(--br-781xl);
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.list {
-  background-color: var(--white);
-  display: flex;
-  flex-direction: row;
-  padding: var(--padding-base);
-  gap: var(--gap-base);
-}
-.menu {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-  background-color: var(--color-gray);
-  display: none;
-  flex-direction: column;
-  padding: var(--padding-5xl);
-}
-.page-icon-child {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 50%;
-  background-color: var(--dark-blue-dark-blue-300);
-}
-.pt {
-  position: absolute;
-  top: 20%;
-  left: 25%;
-  line-height: 150%;
-}
-.page-icon2 {
-  height: 40px;
-  flex: 1;
-  position: relative;
-}
-.page-icon-item {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 50%;
-}
-.es {
-  position: absolute;
-  top: 20%;
-  left: 25%;
-  line-height: 150%;
-}
-.page-icon3 {
-  height: 40px;
-  flex: 1;
-  position: relative;
-  color: var(--dark-blue-dark-blue-300);
-}
-.list1,
-.menu1 {
-  border-radius: var(--br-781xl);
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.list1 {
-  align-self: stretch;
-  background-color: var(--white);
-  display: flex;
-  flex-direction: row;
-  padding: var(--padding-base);
-  gap: var(--gap-base);
-}
-.menu1 {
-  width: 176px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-  background-color: var(--color-gray);
-  display: none;
-  flex-direction: column;
-  padding: var(--padding-5xl);
-  box-sizing: border-box;
-}
-.frame-child {
-  position: absolute;
-  top: 2.6px;
-  left: 0;
-  background-color: var(--color-lavender);
-  width: 31px;
-  height: 48px;
-  display: none;
-}
-.vector-icon {
-  position: absolute;
-  height: 91.7%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 8.3%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  z-index: 1;
-}
-.rectangle-parent {
-  width: 31.1px;
-  height: 50.6px;
-  position: relative;
-  background-color: var(--color-lavender);
-  flex-shrink: 0;
-}
-.ingrese-el-texto {
+body, html {
   margin: 0;
-  align-self: stretch;
-  position: relative;
-  font-size: inherit;
-  line-height: 150%;
-  font-weight: 400;
-  font-family: inherit;
-  flex-shrink: 0;
-  cursor: pointer;
-}
-.frame-parent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 116px;
-  text-align: left;
-  font-size: 32px;
-  color: var(--dark-blue-dark-blue-300);
-  font-family: var(--font-inter);
-}
-.biexclamation-circle-fill-icon {
-  width: 16px;
-  height: 16px;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.message-icon-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 1px 0 0;
-}
-.solo-letras-minsculas {
-  position: relative;
-  line-height: 150%;
-}
-.message-inner-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 7px;
-}
-.button1 {
-  flex: 1;
-  position: relative;
-  font-size: var(--font-size-base);
-  font-family: var(--font-inter);
-  color: var(--white);
-  text-align: center;
-}
-.button {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-5xl);
-  background-color: var(--dark-blue-dark-blue-300);
-  flex: 1;
-  border-radius: var(--br-5xl);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  min-width: 216px;
-  max-width: 100%;
-}
-.button:hover {
-  background-color: var(--color-steelblue-100);
-}
-.button3 {
-  flex: 1;
-  position: relative;
-  font-size: var(--font-size-base);
-  font-family: var(--font-inter);
-  color: var(--dark-blue-dark-blue-300);
-  text-align: center;
-}
-.button-container,
-.button2,
-.message-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  max-width: 100%;
-}
-.button2 {
-  cursor: pointer;
-  border: 1px solid var(--dark-blue-dark-blue-300);
-  padding: 22px 23px;
-  background-color: transparent;
-  flex: 1;
-  border-radius: var(--br-5xl);
-  box-sizing: border-box;
-  flex-direction: row;
-  min-width: 216px;
-}
-.button2:hover {
-  background-color: rgba(61, 107, 163, 0.09);
-  border: 1px solid var(--color-steelblue-100);
+  padding: 0;
+  height: 100%;
   box-sizing: border-box;
 }
-.button-container,
-.message-container {
-  align-self: stretch;
-}
-.button-container {
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-.message-container {
-  flex-direction: column;
-  gap: var(--gap-base);
-}
-.ningn-mensaje-fue {
-  margin: 0;
-  align-self: stretch;
-  position: relative;
-  font-size: inherit;
-  line-height: 29px;
-  font-weight: 700;
-  font-family: inherit;
-}
-.ingresa-el-texto {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-base);
-  line-height: 150%;
-  color: var(--gray-gray-400);
-}
-.encriptador-1-tablet,
-.message-container-parent,
-.root {
+
+.contenedor {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  margin: 0 auto; /* Centra el contenedor en la pantalla */
+  padding: 0 120px; /* Margen izquierdo y derecho de 120px */
+  height: 100vh; /* Altura total de la pantalla */
 }
-.root {
-  align-self: stretch;
-  box-shadow: var(--shadow);
-  border-radius: 32px;
-  background-color: var(--white);
-  padding: 32px;
-  gap: var(--gap-base);
-  text-align: center;
-  font-size: 24px;
-  color: var(--gray-gray-500);
+
+.subContenedor1, .subContenedor2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.encriptador-1-tablet,
-.message-container-parent {
-  font-family: var(--font-inter);
+
+.subContenedor1 {
+  flex: 1; /* Ocupa el espacio restante */
+  background-color: #F3F5FC;
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
+  padding: 10px; /* Espaciado interno */
 }
-.message-container-parent {
-  align-self: stretch;
-  gap: 64px;
-  max-width: 100%;
-  text-align: left;
-  font-size: 12px;
-  color: var(--gray-gray-400);
+
+.subContenedor2 {
+  width: 450px; /* Ancho fijo para el div derecho */
+  background-color: #F3F5FC;
+  padding: 25px; /* Espaciado interno del contenedor */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.encriptador-1-tablet {
-  width: 100%;
-  position: relative;
-  background-color: var(--light-blue-light-blue-100);
-  overflow: hidden;
-  padding: 73.4px var(--padding-21xl) var(--padding-21xl);
-  box-sizing: border-box;
-  gap: 548px;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  font-size: var(--font-size-base);
-  color: var(--white);
+
+.entrada {
+  
+  flex: 1; /* Ocupa el espacio restante dentro de subContenedor1 */
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en una columna */
+  align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
 }
-@media screen and (max-width: 750px) {
-  .ingrese-el-texto {
-    font-size: var(--font-size-7xl);
-    line-height: 38px;
-  }
-  .frame-parent {
-    gap: 58px;
-  }
-  .message-container-parent {
-    gap: 32px;
-  }
+
+
+.entrada input {
+  margin-left: 50px;
+  margin-bottom: 70px;
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ajusta la altura del contenedor */
+  padding: 20px; /* Espaciado interno del input */
+  background-color: #F3F5FC;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 5px; /* Bordes redondeados opcionales */
+  font: condensed 250% sans-serif;
 }
-@media screen and (max-width: 675px) {
-  .ingrese-el-texto {
-    font-size: var(--font-size-7xl);
-    line-height: 38px;
-  }
+
+.entrada input::placeholder {
+  color: blue ; /* Color del texto del placeholder */
+  
 }
-@media screen and (max-width: 450px) {
-  .ingrese-el-texto {
-    font-size: var(--font-size-lgi);
-    line-height: 29px;
-  }
-  .frame-parent {
-    gap: 29px;
-  }
-  .ningn-mensaje-fue {
-    font-size: var(--font-size-lgi);
-    line-height: 23px;
-  }
-  .message-container-parent {
-    gap: var(--gap-base);
-  }
-  .encriptador-1-tablet {
-    gap: 274px;
-  }
+
+
+.entrada img{
+  margin-top: 50px;
+}
+
+.opciones {
+  display: flex; /* Flexbox para alinear los botones */
+  gap: 10px; /* Espacio entre los botones */
+  margin-top: 50px; /* Espacio encima de los botones */
+  margin-bottom: 50px;
+}
+
+.opciones button {
+  flex: 1; /* Hace que los botones ocupen el mismo espacio */
+  height: 60px; /* Ajusta la altura de los botones */
+  border: none; /* Elimina el borde por defecto */
+  border-radius: 5px; /* Bordes redondeados opcionales */
+  background-color: #007bff; /* Color de fondo de los botones */
+  color: white; /* Color del texto del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.opciones button:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón sobre el botón */
+}
+
+.salida {
+  width: calc(100% - 20px); /* Ancho total menos el margen de ambos lados (10px * 2) */
+  background-color: red;
+  display: flex;
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-direction: column; /* Coloca los elementos en columna */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 20px;
+  
+}
+
+.salida p {
+  margin: 0; /* Elimina el margen predeterminado del párrafo */
+  color: white; /* Color del texto dentro de .salida */
+  flex: 1; /* Hace que los botones ocupen el mismo espacio */
+  
+  
+}
+
+.copiar{
+  margin-bottom: 35px;
+  height: 60px; /* Ajusta la altura de los botones */
+  border: none; /* Elimina el borde por defecto */
+  border-radius: 5px; /* Bordes redondeados opcionales */
+  background-color: #007bff; /* Color de fondo de los botones */
+  color: white; /* Color del texto del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }

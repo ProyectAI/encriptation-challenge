@@ -34,11 +34,11 @@ function Decodificar() {
     //usamos la interfaz replace para reemplazar la palabras claves por la vocales 
     //usamos i para que no diferencie entre minúscula y mayúscula
     let textoDecodificado = document.getElementById("codigo").value;
-    textoDecodificado= textoDecodificado.replace(/enter/i,"e");
-    textoDecodificado = textoDecodificado.replace(/imes/i, 'i');
-    textoDecodificado = textoDecodificado.replace(/ai/i, 'a');
-    textoDecodificado = textoDecodificado.replace(/ober/i, 'o');
-    textoDecodificado = textoDecodificado.replace(/ufat/i, 'u');
+    textoDecodificado= textoDecodificado.replace(/enter/g,"e");
+    textoDecodificado = textoDecodificado.replace(/imes/g, 'i');
+    textoDecodificado = textoDecodificado.replace(/ai/g, 'a');
+    textoDecodificado = textoDecodificado.replace(/ober/g, 'o');
+    textoDecodificado = textoDecodificado.replace(/ufat/g, 'u');
 
     alert(`${textoDecodificado}`);
     
