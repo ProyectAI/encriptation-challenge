@@ -11,17 +11,19 @@
         <div class="subContenedor1">
             <div class="entrada">
                 <img src="Frame 6.png" alt="">
-                <input type="text" class="texto" id="codigo" placeholder="Ingrese el texto aqui" autocomplete="off" >
+                <textarea type="text" class="texto" id="codigo" placeholder="Ingrese el texto aqui" autocomplete="off" ></textarea>
+                <img src="Frame 1.png" alt="" id="advertencia">
             </div>
             <div class="opciones">
-                <button onclick="Codificar()">Codificar</button>
+                <button onclick="Codificar()" id="mostrarBtn">Codificar</button>
                 <button onclick="Decodificar()">Decodificar</button>
             </div>
         </div>
         <div class="subContenedor2">
           <div class="salida">
-            <p id="textoMostrar">Aquí aparecerá el texto</p>
-            <button class="copiar"   onclick="Copiar()">copiar</button>
+            <img src="Muñeco.png" alt="">
+            <img src="Frame 5.png" alt="">
+            <button class="copiar"  id="ocultoBtn"    style="display: none;" onclick="Copiar()">copiar</button>
           </div>
         </div>
     </div>
