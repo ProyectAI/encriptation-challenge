@@ -45,7 +45,7 @@ function Decodificar() {
     textoDecodificado = textoDecodificado.replace(/ai/g, 'a');
     textoDecodificado = textoDecodificado.replace(/ober/g, 'o');
     textoDecodificado = textoDecodificado.replace(/ufat/g, 'u');
-
+    
     mostrarResultado(textoDecodificado);
 }
 

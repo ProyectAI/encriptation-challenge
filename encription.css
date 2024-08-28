@@ -163,8 +163,10 @@ img#advertencia {
   }
 
   .copiar {
-    width: 90%;
+    width: 70%;
     bottom: 20px;
+    margin-right: 85px;
+    margin-bottom: 10px;
     right: 5%;
   }
 
@@ -194,9 +196,8 @@ img#advertencia {
   }
 
   .copiar {
-    width: 100%; /* Asegura que el botón copiar ocupe el 100% del ancho del contenedor */
-    bottom: 10px;
-    right: 0;
+    width: 60%; /* Asegura que el botón copiar ocupe el 100% del ancho del contenedor */
+    margin-right: 35px;
     position: absolute; /* Asegura que el botón copiar se posicione adecuadamente */
   }
 
