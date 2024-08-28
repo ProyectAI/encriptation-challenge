@@ -7,9 +7,10 @@ body, html {
 
 .contenedor {
   display: flex;
-  margin: 0 auto; /* Centra el contenedor en la pantalla */
-  padding: 0 120px; /* Margen izquierdo y derecho de 120px */
-  height: 100vh; /* Altura total de la pantalla */
+  margin: 0 auto;
+  padding: 0 120px;
+  height: 100vh;
+  flex-direction: row;
 }
 
 .subContenedor1, .subContenedor2 {
@@ -18,118 +19,197 @@ body, html {
 }
 
 .subContenedor1 {
-  flex: 1; /* Ocupa el espacio restante */
-  background-color: #F3F5FC;
+  flex: 1;
+  background: linear-gradient(to left, white, #7bfafe);
   display: flex;
-  flex-direction: column; /* Coloca los elementos en columna */
-  padding: 10px; /* Espaciado interno */
+  flex-direction: column;
+  padding: 10px;
 }
 
 .subContenedor2 {
-  width: 450px; /* Ancho fijo para el div derecho */
-  background-color: #F3F5FC;
-  padding: 25px; /* Espaciado interno del contenedor */
+  width: 450px;
+  background-color: white;
+  padding: 25px;
   display: flex;
   align-items: center;
-  
+  position: relative;
 }
 
 .entrada {
-  
-  flex: 1; /* Ocupa el espacio restante dentro de subContenedor1 */
+  flex: 1;
   display: flex;
-  flex-direction: column; /* Alinea los elementos en una columna */
-  align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+  flex-direction: column;
+  align-items: flex-start;
 }
-
 
 .entrada textarea {
   margin-top: 90px;
   margin-right: 90px;
   margin-left: 35px;
   margin-bottom: 60px;
-  width: 90%; /* Ocupa todo el ancho del contenedor */
-  height: 100%; /* Ajusta la altura del contenedor */
-  padding: 20px; /* Espaciado interno del input */
-  background-color: #F3F5FC;
+  width: 90%;
+  height: 100%;
+  padding: 20px;
+  background: linear-gradient(to left, white, #7bfafe);
   border: none;
   resize: none; 
   outline: none;
   box-shadow: none;
-  border-radius: 5px; /* Bordes redondeados opcionales */
+  border-radius: 5px;
   font: condensed 250% sans-serif;
 }
 
 .entrada textarea::placeholder {
-  color: blue ; /* Color del texto del placeholder */
-  
+  color: blue;
 }
 
-
-.entrada img{
+.entrada img {
   margin-top: 50px;
 }
 
-img#advertencia{
+img#advertencia {
   margin-left: 30px;
 }
 
 .opciones {
   margin-left: 30px;
-  display: flex; /* Flexbox para alinear los botones */
-  gap: 10px; /* Espacio entre los botones */
-  margin-top: 50px; /* Espacio encima de los botones */
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
 .opciones button {
-  flex: 1; /* Hace que los botones ocupen el mismo espacio */
-  height: 60px; /* Ajusta la altura de los botones */
-  border: none; /* Elimina el borde por defecto */
-  border-radius: 5px; /* Bordes redondeados opcionales */
-  background-color: #007bff; /* Color de fondo de los botones */
-  color: white; /* Color del texto del botón */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  flex: 1;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
 }
 
 .opciones button:hover {
-  background-color: #0056b3; /* Color de fondo al pasar el ratón sobre el botón */
+  background-color: #0056b3;
 }
 
 .salida {
-  width: calc(100% - 20px); /* Ancho total menos el margen de ambos lados (10px * 2) */
-  background-color: red;
+  width: calc(100% - 20px);
+  background: linear-gradient(to left, #5fb2ffd1, #7bfafe);
   display: flex;
   height: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  flex-direction: column; /* Coloca los elementos en columna */
-  padding: 20px; /* Espaciado interno */
+  flex-direction: column;
+  padding: 20px;
   border-radius: 20px;
-  height: 100%;
- 
+  position: relative;
 }
-.salida img{
+
+.salida img {
   align-items: center;
   max-width: 100%;
   max-height: calc(100% - 60px);
   margin-top: auto;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
-
-
-.copiar{
-  margin-top: auto;
-  margin-bottom: 35px;
-  height: 60px; /* Ajusta la altura de los botones */
-  border: none; /* Elimina el borde por defecto */
-  border-radius: 5px; /* Bordes redondeados opcionales */
-  background-color: #007bff; /* Color de fondo de los botones */
-  color: white; /* Color del texto del botón */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+.copiar {
+  height: 60px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 60px;
+  right: 15%;
 }
 
-.copiar:hover{
-  background-color: rgb(0, 0,0, 0.5);
+.copiar:hover {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+/* Media Queries para pantallas de tabletas */
+@media (max-width: 1174px) {
+  .contenedor {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .subContenedor2 {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .entrada textarea {
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: calc(100% - 40px);
+  }
+  .salida{
+    margin-top: 5px;
+    width: 80%;
+    height: 80%;
+  }
+
+  .salida img{
+    margin-top: 35px;
+    width: 100%;
+    height:90%;
+  }
+
+  .copiar {
+    width: 90%;
+    bottom: 20px;
+    right: 5%;
+  }
+
+  /* Oculta la imagen "Muñeco.png" en tabletas */
+  .salida img[src="Muñeco.png"] {
+    display: none !important; /* Usa !important para asegurar que se aplique */
+  }
+}
+
+/* Media Queries para pantallas de teléfonos móviles */
+/* Estilos para pantallas de 375px o menos */
+@media (max-width: 375px) {
+  .contenedor {
+    padding: 0 10px; /* Reduce el padding */
+  }
+
+  .subContenedor1, .subContenedor2 {
+    width: 100%; /* Hace que los contenedores ocupen el 100% del ancho */
+  }
+
+  .entrada textarea {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: calc(100% - 20px); /* Ajusta el ancho del textarea */
+  }
+
+  .copiar {
+    width: 100%; /* Asegura que el botón copiar ocupe el 100% del ancho del contenedor */
+    bottom: 10px;
+    right: 0;
+    position: absolute; /* Asegura que el botón copiar se posicione adecuadamente */
+  }
+
+  .opciones {
+    display: block; /* Alinea los botones en una columna */
+    text-align: center; /* Opcional: centra los botones si es necesario */
+  }
+ #mostrarBtn{
+  margin-bottom: 15px;
+ }
+
+  /* Oculta la imagen "Muñeco.png" en teléfonos móviles */
+  .salida img[src="Muñeco.png"] {
+    display: none !important; /* Usa !important para asegurar que se aplique */
+  }
 }
