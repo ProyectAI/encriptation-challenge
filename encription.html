@@ -1,91 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño con Flexbox</title>
     <link rel="stylesheet" href="encription.css">
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-    />
-  </head>
-  <body>
-    <div class="encriptador-1-tablet">
-      <div class="menu">
-        <div class="list">
-          <img class="page-icon" alt="" src="./public/page-icon.svg" />
-
-          <img class="page-icon1" alt="" src="./public/page-icon-1.svg" />
-        </div>
-      </div>
-      <div class="menu1">
-        <div class="list1">
-          <div class="page-icon2">
-            <div class="page-icon-child"></div>
-            <div class="pt">PT</div>
-          </div>
-          <div class="page-icon3">
-            <div class="page-icon-item"></div>
-            <div class="es">ES</div>
-          </div>
-        </div>
-      </div>
-      <section class="frame-parent">
-        <div class="rectangle-parent">
-          <div class="frame-child"></div>
-          <img
-            class="vector-icon"
-            loading="lazy"
-            alt=""
-            src="./public/vector.svg"
-          />
-        </div>
-        <h1 class="ingrese-el-texto" id="ingreseElTexto">
-          Ingrese el texto aqui
-        </h1>
-      </section>
-      <section class="message-container-parent">
-        <div class="message-container">
-          <div class="message-inner-container">
-            <div class="message-icon-container">
-              <img
-                class="biexclamation-circle-fill-icon"
-                loading="lazy"
-                alt=""
-                src="./public/biexclamationcirclefill.svg"
-              />
+</head>
+<body>
+    <div class="contenedor">
+        <div class="subContenedor1">
+            <div class="entrada">
+                <img src="Frame 6.png" alt="">
+                <textarea type="text" class="texto" id="codigo" placeholder="Ingrese el texto aqui" autocomplete="off" ></textarea>
+                <img src="Frame 1.png" alt="" id="advertencia">
             </div>
-            <div class="solo-letras-minsculas">
-              Solo letras minúsculas y sin acentos
+            <div class="opciones">
+                <button onclick="Codificar()" id="mostrarBtn">Codificar</button>
+                <button onclick="Decodificar()">Decodificar</button>
             </div>
-          </div>
-          <div class="button-container">
-            <button class="button">
-              <div class="button1">Encriptar</div>
-            </button>
-            <button class="button2">
-              <div class="button3">Desencriptar</div>
-            </button>
-          </div>
         </div>
-        <div class="root">
-          <h3 class="ningn-mensaje-fue">Ningún mensaje fue encontrado</h3>
-          <div class="ingresa-el-texto">
-            Ingresa el texto que desees encriptar o desencriptar.
+        <div class="subContenedor2">
+          <div class="salida">
+            <img src="Muñeco.png" alt="">
+            <img src="Frame 5.png" alt="">
           </div>
+          <button class="copiar"  id="ocultoBtn" style="display: none;" onclick="Copiar()">copiar</button>
         </div>
-      </section>
     </div>
-
-    <script>
-      var ingreseElTexto = document.getElementById("ingreseElTexto");
-      if (ingreseElTexto) {
-        ingreseElTexto.addEventListener("click", function (e) {
-          // Please sync "Encriptador - 2 Tablet" to the project
-        });
-      }
-      </script>
-  </body>
+</body>
+<script src="encription.js"></script>
+<script src="encription2.js"></script>
 </html>
